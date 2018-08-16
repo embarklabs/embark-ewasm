@@ -1,0 +1,26 @@
+{
+  "name": "embark-ewasm",
+  "version": "1.0.0",
+  "description": "Embark plugin for eWASM",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/embark-framework/embark-ewasm.git"
+  },
+  "author": "Jonathan Rainville",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/embark-framework/embark-ewasm/issues"
+  },
+  "homepage": "https://github.com/embark-framework/embark-ewasm#readme",
+  "devDependencies": {
+    "eslint": "^4.19.1"
+  },
+  "dependencies": {
+    "async": "^2.6.1",
+    "shelljs": "^0.8.2"
+  }
+}
