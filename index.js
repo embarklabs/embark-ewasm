@@ -6,9 +6,13 @@ module.exports = (embark) => {
   embark.registerCompiler('.rs', compileRustWasm);
 
   function compileRustWasm(files, cb) {
-    if (!files || !files.length) {
+    if (!files) {
       return cb();
     }
-    Compiler.compileRustWasm(embark.logger, files, cb);
+    let filesToCompile = files.filter(file => file.filename.indexOf('target') === -1);
+    if (!filesToCompile.length) {
+      return cb();
+    }
+    Compiler.compileRustWasm(embark.logger, filesToCompile, cb);
   }
 };
