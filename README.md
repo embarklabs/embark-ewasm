@@ -17,8 +17,15 @@ then add embark-ewasm to the plugins section in ```embark.json```:
   }
 ```
 
+Usage
+======
+Put the toml file into `contracts/` directory
+Put the rust file into `contracts/src` directory
+
 Requirements
 ======
 
 - Embark 3.0.0 or higher
 - Rust and Cargo installed and available globally on your machine
+- Target wasm32-unknown-unknown installed
+
