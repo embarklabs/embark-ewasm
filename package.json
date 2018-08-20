@@ -22,6 +22,7 @@
   "dependencies": {
     "async": "^2.6.1",
     "shelljs": "^0.8.2",
-    "toml": "^2.3.3"
+    "toml": "^2.3.3",
+    "web3-utils": "^1.0.0-beta.35"
   }
 }
